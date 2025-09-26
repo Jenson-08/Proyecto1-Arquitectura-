@@ -1,0 +1,188 @@
+{
+  "Directores": [
+    {
+      "Identificacion": "101234567",
+      "Nombre": "James Wan",
+      "Nacionalidad": "Australiano",
+      "Fecha_nacimiento": "1977-02-26"
+    },
+    {
+      "Identificacion": "102345678",
+      "Nombre": "Jordan Peele",
+      "Nacionalidad": "Estadounidense",
+      "Fecha_nacimiento": "1979-02-21"
+    },
+    {
+      "Identificacion": "103456789",
+      "Nombre": "Alfred Hitchcock",
+      "Nacionalidad": "Británico",
+      "Fecha_nacimiento": "1899-08-13"
+    },
+    {
+      "Identificacion": "104567890",
+      "Nombre": "John Carpenter",
+      "Nacionalidad": "Estadounidense",
+      "Fecha_nacimiento": "1948-01-16"
+    },
+    {
+      "Identificacion": "105678901",
+      "Nombre": "Guillermo del Toro",
+      "Nacionalidad": "Mexicano",
+      "Fecha_nacimiento": "1964-10-09"
+    },
+    {
+      "Identificacion": "106789012",
+      "Nombre": "Wes Craven",
+      "Nacionalidad": "Estadounidense",
+      "Fecha_nacimiento": "1939-08-02"
+    }
+  ],
+  "Productoras": [
+    {
+      "Identificacion": "3101123456",
+      "Nombre": "Warner Bros.",
+      "Pais_origen": "Estados Unidos",
+      "Annio_fundacion": 1923
+    },
+    {
+      "Identificacion": "3102234567",
+      "Nombre": "Universal Pictures",
+      "Pais_origen": "Estados Unidos",
+      "Annio_fundacion": 1912
+    },
+    {
+      "Identificacion": "3103345678",
+      "Nombre": "20th Century Fox",
+      "Pais_origen": "Estados Unidos",
+      "Annio_fundacion": 1935
+    },
+    {
+      "Identificacion": "3104456789",
+      "Nombre": "Blumhouse Productions",
+      "Pais_origen": "Estados Unidos",
+      "Annio_fundacion": 2000
+    },
+    {
+      "Identificacion": "3105567890",
+      "Nombre": "Legendary Pictures",
+      "Pais_origen": "Estados Unidos",
+      "Annio_fundacion": 2000
+    },
+    {
+      "Identificacion": "3106678901",
+      "Nombre": "Laika",
+      "Pais_origen": "Estados Unidos",
+      "Annio_fundacion": 2005
+    }
+  ],
+  "Peliculas": [
+    {
+      "Titulo": "El_Conjuro",
+      "Descripcion": "Pareja de investigadores paranormales ayuda a una familia aterrorizada.",
+      "Duracion": 112,
+      "Clasificacion_edad": "B15",
+      "Annio_estreno": 2013,
+      "Director": "101234567",
+      "Productora": "3104456789"
+    },
+    {
+      "Titulo": "Get_Out",
+      "Descripcion": "Un joven visita la familia de su novia y descubre un oscuro secreto.",
+      "Duracion": 104,
+      "Clasificacion_edad": "B15",
+      "Annio_estreno": 2017,
+      "Director": "102345678",
+      "Productora": "3104456789"
+    },
+    {
+      "Titulo": "Psicosis",
+      "Descripcion": "Una mujer se aloja en un motel aislado y conoce a su inquietante dueño.",
+      "Duracion": 109,
+      "Clasificacion_edad": "B15",
+      "Annio_estreno": 1960,
+      "Director": "103456789",
+      "Productora": "3103345678"
+    },
+    {
+      "Titulo": "Halloween",
+      "Descripcion": "Un asesino enmascarado aterroriza a una ciudad en la noche de Halloween.",
+      "Duracion": 91,
+      "Clasificacion_edad": "B15",
+      "Annio_estreno": 1978,
+      "Director": "104567890",
+      "Productora": "3102234567"
+    },
+    {
+      "Titulo": "El_Laberinto_del_Fauno",
+      "Descripcion": "Una niña en la posguerra española descubre un mundo mágico y oscuro.",
+      "Duracion": 118,
+      "Clasificacion_edad": "B15",
+      "Annio_estreno": 2006,
+      "Director": "105678901",
+      "Productora": "3105567890"
+    },
+    {
+      "Titulo": "Pesadilla_en_Elm_Street",
+      "Descripcion": "Un asesino ataca a los adolescentes en sus sueños.",
+      "Duracion": 91,
+      "Clasificacion_edad": "B15",
+      "Annio_estreno": 1984,
+      "Director": "106789012",
+      "Productora": "3102234567"
+    },
+    {
+      "Titulo": "Insidious",
+      "Descripcion": "Una familia trata de salvar a su hijo atrapado en el mundo de los espíritus.",
+      "Duracion": 103,
+      "Clasificacion_edad": "B15",
+      "Annio_estreno": 2010,
+      "Director": "101234567",
+      "Productora": "3104456789"
+    },
+    {
+      "Titulo": "Nosotros",
+      "Descripcion": "Una familia se enfrenta a sus dobles aterradores.",
+      "Duracion": 116,
+      "Clasificacion_edad": "B15",
+      "Annio_estreno": 2019,
+      "Director": "102345678",
+      "Productora": "3104456789"
+    },
+    {
+      "Titulo": "Los_Pájaros",
+      "Descripcion": "Aves atacan sin razón aparente a los habitantes de una ciudad costera.",
+      "Duracion": 119,
+      "Clasificacion_edad": "B15",
+      "Annio_estreno": 1963,
+      "Director": "103456789",
+      "Productora": "3103345678"
+    },
+    {
+      "Titulo": "La_Cosa",
+      "Descripcion": "Un grupo de científicos en la Antártida enfrenta a un alienígena que imita formas de vida.",
+      "Duracion": 109,
+      "Clasificacion_edad": "B15",
+      "Annio_estreno": 1982,
+      "Director": "104567890",
+      "Productora": "3102234567"
+    },
+    {
+      "Titulo": "Crimson_Peak",
+      "Descripcion": "Una joven descubre secretos oscuros en la mansión de su esposo.",
+      "Duracion": 119,
+      "Clasificacion_edad": "B15",
+      "Annio_estreno": 2015,
+      "Director": "105678901",
+      "Productora": "3105567890"
+    },
+    {
+      "Titulo": "Scream",
+      "Descripcion": "Un asesino enmascarado aterroriza a adolescentes mientras sigue un patrón macabro.",
+      "Duracion": 111,
+      "Clasificacion_edad": "B15",
+      "Annio_estreno": 1996,
+      "Director": "106789012",
+      "Productora": "3102234567"
+    }
+  ]
+}
