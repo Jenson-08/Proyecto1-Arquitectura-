@@ -1,6 +1,9 @@
+
 <template>
   <div class="main-categorias">
     <h1 class="main-titulo">Explora el Mundo del Cine</h1>
+
+    <utteranc />
 
     <div class="categorias-grid">
       <!-- Películas -->
@@ -37,6 +40,7 @@
 </template>
 
 <script>
+import utteranc from '~/components/global/utteranc.vue';
 export default {
   data() {
     return {};
