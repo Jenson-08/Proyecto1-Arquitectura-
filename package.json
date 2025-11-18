@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@nuxt/content": "^1.14.0",
+    "@nuxtjs/snipcart": "^3.0.0",
     "nuxt": "^2.15.8"
   }
 }

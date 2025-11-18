@@ -1,6 +1,7 @@
 <template>
   <div class="pagina-general">
     <RenderizadorGeneral :marca="marca" :data="data" />
+    <utteranc> </utteranc>
   </div>
 </template>
 

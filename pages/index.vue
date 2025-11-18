@@ -1,14 +1,15 @@
-
 <template>
   <div class="main-categorias">
     <h1 class="main-titulo">Explora el Mundo del Cine</h1>
 
-    <utteranc />
-
     <div class="categorias-grid">
       <!-- Películas -->
       <NuxtLink to="/cine/Peliculas" class="card-categoria">
-        <img class="card-categoria__imagen" src="/images/peliculas/mainpage.jpg" alt="Películas" />
+        <img
+          class="card-categoria__imagen"
+          src="/images/peliculas/mainpage.jpg"
+          alt="Películas"
+        />
         <div class="card-categoria__contenido">
           <h2>Películas</h2>
           <p>Explora todas las películas disponibles.</p>
@@ -18,7 +19,11 @@
 
       <!-- Directores -->
       <NuxtLink to="/cine/Directores" class="card-categoria">
-        <img class="card-categoria__imagen" src="/images/directores/mainpage.jpg" alt="Directores" />
+        <img
+          class="card-categoria__imagen"
+          src="/images/directores/mainpage.jpg"
+          alt="Directores"
+        />
         <div class="card-categoria__contenido">
           <h2>Directores</h2>
           <p>Explora todos los directores.</p>
@@ -28,7 +33,11 @@
 
       <!-- Productoras -->
       <NuxtLink to="/cine/Productoras" class="card-categoria">
-        <img class="card-categoria__imagen" src="/images/productoras/mainpage.jpg" alt="Productoras" />
+        <img
+          class="card-categoria__imagen"
+          src="/images/productoras/mainpage.jpg"
+          alt="Productoras"
+        />
         <div class="card-categoria__contenido">
           <h2>Productoras</h2>
           <p>Explora todas las productoras.</p>
@@ -40,7 +49,6 @@
 </template>
 
 <script>
-import utteranc from '~/components/global/utteranc.vue';
 export default {
   data() {
     return {};

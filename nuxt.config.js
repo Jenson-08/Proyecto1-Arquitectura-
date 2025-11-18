@@ -1,5 +1,5 @@
 export default {
-  modules: ["@nuxt/content"],
+  modules: ["@nuxt/content", "@nuxtjs/snipcart"],
   components: true,
 
   css: [

@@ -83,7 +83,8 @@
       "Clasificacion_edad": "B15",
       "Annio_estreno": 2013,
       "Director": "101234567",
-      "Productora": "3104456789"
+      "Productora": "3104456789",
+      "Precio": 4200
     },
     {
       "Titulo": "Get_Out",
@@ -92,7 +93,8 @@
       "Clasificacion_edad": "B15",
       "Annio_estreno": 2017,
       "Director": "102345678",
-      "Productora": "3104456789"
+      "Productora": "3104456789",
+      "Precio": 4000
     },
     {
       "Titulo": "Psicosis",
@@ -101,7 +103,8 @@
       "Clasificacion_edad": "B15",
       "Annio_estreno": 1960,
       "Director": "103456789",
-      "Productora": "3103345678"
+      "Productora": "3103345678",
+      "Precio": 3500
     },
     {
       "Titulo": "Halloween",
@@ -110,7 +113,8 @@
       "Clasificacion_edad": "B15",
       "Annio_estreno": 1978,
       "Director": "104567890",
-      "Productora": "3102234567"
+      "Productora": "3102234567",
+      "Precio": 3600
     },
     {
       "Titulo": "El_Laberinto_del_Fauno",
@@ -119,7 +123,8 @@
       "Clasificacion_edad": "B15",
       "Annio_estreno": 2006,
       "Director": "105678901",
-      "Productora": "3105567890"
+      "Productora": "3105567890",
+      "Precio": 4500
     },
     {
       "Titulo": "Pesadilla_en_Elm_Street",
@@ -128,7 +133,8 @@
       "Clasificacion_edad": "B15",
       "Annio_estreno": 1984,
       "Director": "106789012",
-      "Productora": "3102234567"
+      "Productora": "3102234567",
+      "Precio": 3800
     },
     {
       "Titulo": "Insidious",
@@ -137,7 +143,8 @@
       "Clasificacion_edad": "B15",
       "Annio_estreno": 2010,
       "Director": "101234567",
-      "Productora": "3104456789"
+      "Productora": "3104456789",
+      "Precio": 4100
     },
     {
       "Titulo": "Nosotros",
@@ -146,7 +153,8 @@
       "Clasificacion_edad": "B15",
       "Annio_estreno": 2019,
       "Director": "102345678",
-      "Productora": "3104456789"
+      "Productora": "3104456789",
+      "Precio": 4300
     },
     {
       "Titulo": "Los_Pájaros",
@@ -155,7 +163,8 @@
       "Clasificacion_edad": "B15",
       "Annio_estreno": 1963,
       "Director": "103456789",
-      "Productora": "3103345678"
+      "Productora": "3103345678",
+      "Precio": 3400
     },
     {
       "Titulo": "La_Cosa",
@@ -164,7 +173,8 @@
       "Clasificacion_edad": "B15",
       "Annio_estreno": 1982,
       "Director": "104567890",
-      "Productora": "3102234567"
+      "Productora": "3102234567",
+      "Precio": 3900
     },
     {
       "Titulo": "Crimson_Peak",
@@ -173,7 +183,8 @@
       "Clasificacion_edad": "B15",
       "Annio_estreno": 2015,
       "Director": "105678901",
-      "Productora": "3105567890"
+      "Productora": "3105567890",
+      "Precio": 4400
     },
     {
       "Titulo": "Scream",
@@ -182,7 +193,8 @@
       "Clasificacion_edad": "B15",
       "Annio_estreno": 1996,
       "Director": "106789012",
-      "Productora": "3102234567"
+      "Productora": "3102234567",
+      "Precio": 3700
     }
   ]
 }

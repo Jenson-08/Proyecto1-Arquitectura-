@@ -6,6 +6,7 @@
       :director="directorObj"
       :productora="productoraObj"
     />
+    <utteranc> </utteranc>
   </div>
 </template>
 
@@ -21,8 +22,12 @@ export default {
       marca: "Peliculas", // string: "Peliculas" | "Directores" | "Productoras"
       data: collections || [], // array de registros
       // Si existe, lo parsea de JSON, si no queda null
-      directorObj: query.director ? JSON.parse(decodeURIComponent(query.director)) : null,
-      productoraObj: query.productora ? JSON.parse(decodeURIComponent(query.productora)) : null,
+      directorObj: query.director
+        ? JSON.parse(decodeURIComponent(query.director))
+        : null,
+      productoraObj: query.productora
+        ? JSON.parse(decodeURIComponent(query.productora))
+        : null,
     };
   },
 };

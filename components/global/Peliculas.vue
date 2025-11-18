@@ -16,16 +16,23 @@
 
       <!-- Contenido -->
       <div class="tarjeta-pelicula__contenido">
-        <h3 class="tarjeta-pelicula__titulo">{{ pelicula.Titulo.replace(/_/g, " ") }}</h3>
+        <h3 class="tarjeta-pelicula__titulo">
+          {{ pelicula.Titulo.replace(/_/g, " ") }}
+        </h3>
 
         <ul class="tarjeta-pelicula__detalles">
           <li><strong>Año:</strong> {{ pelicula.Annio_estreno }}</li>
           <li><strong>Duración:</strong> {{ pelicula.Duracion }} min</li>
-          <li><strong>Clasificación:</strong> {{ pelicula.Clasificacion_edad }}</li>
+          <li>
+            <strong>Clasificación:</strong> {{ pelicula.Clasificacion_edad }}
+          </li>
           <li>
             <strong>Director:</strong>
             <NuxtLink
-              :to="{ path: '/cine/search/peliculas', query: { director: pelicula.Director } }"
+              :to="{
+                path: '/cine/search/peliculas',
+                query: { director: pelicula.Director },
+              }"
               class="enlace-card"
             >
               {{ getDirectorNombre(pelicula.Director) }}
@@ -34,7 +41,10 @@
           <li>
             <strong>Productora:</strong>
             <NuxtLink
-              :to="{ path: '/cine/search/peliculas', query: { productora: pelicula.Productora } }"
+              :to="{
+                path: '/cine/search/peliculas',
+                query: { productora: pelicula.Productora },
+              }"
               class="enlace-card"
             >
               {{ getProductoraNombre(pelicula.Productora) }}
@@ -43,6 +53,9 @@
         </ul>
 
         <p class="tarjeta-pelicula__descripcion">{{ pelicula.Descripcion }}</p>
+        <button class="boton-comprar" @click="onComprar(pelicula)">
+          🛒 Comprar {{ pelicula.Precio }}
+        </button>
       </div>
     </div>
 
@@ -88,8 +101,32 @@ export default {
 };
 </script>
 
-
 <style scoped>
+.boton-comprar {
+  width: 100%;
+  margin-top: auto;
+  padding: 0;
+  background: #1565c0;
+  color: white;
+  border: none;
+  border-radius: 8px;
+
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+
+  transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.boton-comprar:hover {
+  background: #0d47a1;
+  transform: translateY(-2px);
+}
+
+.boton-comprar:active {
+  transform: translateY(0);
+}
+
 .contenedor-peliculas {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
