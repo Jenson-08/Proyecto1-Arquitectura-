@@ -49,8 +49,6 @@
     <!-- Caso no reconocido -->
     <div v-else>
       <p class="renderizador-aviso">⚠️ No se reconoce el tipo de datos</p>
-      <Directores :items="data[marca]" />
-      <Productoras :items="data[marca]" />
     </div>
   </div>
 </template>
