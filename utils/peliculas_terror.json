@@ -84,7 +84,7 @@
       "Annio_estreno": 2013,
       "Director": "101234567",
       "Productora": "3104456789",
-      "Precio": 4200
+      "Precio": 4
     },
     {
       "Titulo": "Get_Out",
@@ -94,7 +94,7 @@
       "Annio_estreno": 2017,
       "Director": "102345678",
       "Productora": "3104456789",
-      "Precio": 4000
+      "Precio": 4
     },
     {
       "Titulo": "Psicosis",
@@ -104,7 +104,7 @@
       "Annio_estreno": 1960,
       "Director": "103456789",
       "Productora": "3103345678",
-      "Precio": 3500
+      "Precio": 3
     },
     {
       "Titulo": "Halloween",
@@ -114,7 +114,7 @@
       "Annio_estreno": 1978,
       "Director": "104567890",
       "Productora": "3102234567",
-      "Precio": 3600
+      "Precio": 2
     },
     {
       "Titulo": "El_Laberinto_del_Fauno",
@@ -124,7 +124,7 @@
       "Annio_estreno": 2006,
       "Director": "105678901",
       "Productora": "3105567890",
-      "Precio": 4500
+      "Precio": 4
     },
     {
       "Titulo": "Pesadilla_en_Elm_Street",
@@ -134,7 +134,7 @@
       "Annio_estreno": 1984,
       "Director": "106789012",
       "Productora": "3102234567",
-      "Precio": 3800
+      "Precio": 3.8
     },
     {
       "Titulo": "Insidious",
@@ -144,7 +144,7 @@
       "Annio_estreno": 2010,
       "Director": "101234567",
       "Productora": "3104456789",
-      "Precio": 4100
+      "Precio": 5
     },
     {
       "Titulo": "Nosotros",
@@ -154,7 +154,7 @@
       "Annio_estreno": 2019,
       "Director": "102345678",
       "Productora": "3104456789",
-      "Precio": 4300
+      "Precio": 4.3
     },
     {
       "Titulo": "Los_Pájaros",
@@ -164,7 +164,7 @@
       "Annio_estreno": 1963,
       "Director": "103456789",
       "Productora": "3103345678",
-      "Precio": 3400
+      "Precio": 3.4
     },
     {
       "Titulo": "La_Cosa",
@@ -174,7 +174,7 @@
       "Annio_estreno": 1982,
       "Director": "104567890",
       "Productora": "3102234567",
-      "Precio": 3900
+      "Precio": 3.9
     },
     {
       "Titulo": "Crimson_Peak",
@@ -184,7 +184,7 @@
       "Annio_estreno": 2015,
       "Director": "105678901",
       "Productora": "3105567890",
-      "Precio": 4400
+      "Precio": 4.4
     },
     {
       "Titulo": "Scream",
@@ -194,7 +194,7 @@
       "Annio_estreno": 1996,
       "Director": "106789012",
       "Productora": "3102234567",
-      "Precio": 3700
+      "Precio": 3.7
     }
   ]
 }
