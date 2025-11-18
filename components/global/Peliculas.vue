@@ -97,6 +97,84 @@ export default {
       const prod = this.items.Productoras.find((p) => p.Identificacion === id);
       return prod ? prod.Nombre : "Desconocida";
     },
+    async onComprar(pelicula) {
+      try {
+        // 1) Esperar a que Snipcart esté disponible (polling seguro)
+        if (
+          !window.Snipcart ||
+          !window.Snipcart.api ||
+          !window.Snipcart.api.cart ||
+          !window.Snipcart.api.cart.items
+        ) {
+          await new Promise((resolve, reject) => {
+            let tries = 0;
+            const maxTries = 20;
+            const iv = setInterval(() => {
+              tries++;
+              if (
+                window.Snipcart &&
+                window.Snipcart.api &&
+                window.Snipcart.api.cart &&
+                window.Snipcart.api.cart.items
+              ) {
+                clearInterval(iv);
+                return resolve();
+              }
+              if (tries >= maxTries) {
+                clearInterval(iv);
+                return reject(
+                  new Error("Snipcart no está disponible (script no cargado)")
+                );
+              }
+            }, 100);
+          });
+        }
+
+        // 2) Construir el producto (sanitize / fallback)
+        const price = Number(pelicula.Precio);
+        const product = {
+          id: String(pelicula.Titulo), // id único
+          name: pelicula.Titulo.replace(/_/g, " "),
+          price: Number.isFinite(price) ? price : 0,
+          url: `${window.location.origin}/cine/peliculas/${encodeURIComponent(
+            pelicula.Titulo
+          )}`,
+          image: `/images/peliculas/${pelicula.Titulo.replace(
+            /\s+/g,
+            "_"
+          )}.jpg`,
+          description: pelicula.Descripcion || "",
+          quantity: 1,
+        };
+
+        // 3) Añadir al carrito usando la API de Snipcart v3
+        await window.Snipcart.api.cart.items.add(product);
+
+        // 4) Abrir el carrito (distintos puntos de acceso según versión)
+        try {
+          if (
+            window.Snipcart.api &&
+            window.Snipcart.api.theme &&
+            window.Snipcart.api.theme.cart
+          ) {
+            window.Snipcart.api.theme.cart.open();
+          } else if (
+            window.Snipcart.api &&
+            window.Snipcart.api.cart &&
+            window.Snipcart.api.cart.open
+          ) {
+            window.Snipcart.api.cart.open();
+          }
+        } catch (e) {
+          // No crítico: sólo intentamos abrir el carrito
+          // console.warn("No se pudo abrir el carrito automáticamente", e);
+        }
+
+        console.log("Producto añadido al carrito:", product.id);
+      } catch (err) {
+        console.error("Error al agregar producto al carrito Snipcart:", err);
+      }
+    },
   },
 };
 </script>
