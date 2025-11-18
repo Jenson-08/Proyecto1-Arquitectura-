@@ -16,15 +16,19 @@ export default {
 
   methods: {
     issueKey() {
-      const route = this.$route;
+      const path = this.$route.path.toLowerCase();
+      const query = JSON.stringify(this.$route.query || {});
 
-      const slug = route.query.slug || "general";
-      const director = route.query.director || "no-director";
-      const productora = route.query.productora || "no-productora";
+      const base = `${path}__${query}`;
 
-      return `detalle-${slug}-${director}-${productora}`;
+      let hash = 0;
+      for (let i = 0; i < base.length; i++) {
+        hash = (hash << 5) - hash + base.charCodeAt(i);
+        hash |= 0;
+      }
+
+      return `page-${Math.abs(hash)}`;
     },
-
     loadUtterances() {
       const container = this.$refs.comments;
       if (!container) return;
