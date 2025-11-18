@@ -5,7 +5,6 @@
       <h2 class="renderizador-titulo">
         <template v-if="director">
           Películas del Director {{ director.Nombre }}
-          
         </template>
         <template v-else-if="productora">
           Películas de la Productora {{ productora.Nombre }}
@@ -13,13 +12,9 @@
         <template v-else> Listado de Películas </template>
       </h2>
 
- <!-- 🔹 Botón Volver dinámico -->
+      <!-- 🔹 Botón Volver dinámico -->
       <div v-if="director || productora" class="volver-wrapper">
-        <NuxtLink
-          v-if="director"
-          to="/cine/Directores"
-          class="btn-volver"
-        >
+        <NuxtLink v-if="director" to="/cine/Directores" class="btn-volver">
           ← Volver a Directores
         </NuxtLink>
         <NuxtLink
@@ -30,8 +25,6 @@
           ← Volver a Productoras
         </NuxtLink>
       </div>
-
-
 
       <Peliculas
         :key="$route.fullPath"
@@ -56,6 +49,8 @@
     <!-- Caso no reconocido -->
     <div v-else>
       <p class="renderizador-aviso">⚠️ No se reconoce el tipo de datos</p>
+      <Directores :items="data[marca]" />
+      <Productoras :items="data[marca]" />
     </div>
   </div>
 </template>
@@ -75,14 +70,14 @@ export default {
     data: {
       type: Object,
       required: true,
-    }
+    },
   },
   components: {
     Peliculas,
     Directores,
     Productoras,
   },
- computed: {
+  computed: {
     director() {
       const id = this.$route.query.director;
       return id
@@ -96,7 +91,6 @@ export default {
         : null;
     },
   },
-
 };
 </script>
 
