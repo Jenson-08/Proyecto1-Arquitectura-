@@ -4,7 +4,7 @@
 
     <div class="categorias-grid">
       <!-- Películas -->
-      <NuxtLink to="/cine/Peliculas" class="card-categoria">
+      <NuxtLink to="/cine/peliculas" class="card-categoria">
         <img
           class="card-categoria__imagen"
           src="/images/peliculas/mainpage.jpg"
@@ -18,7 +18,7 @@
       </NuxtLink>
 
       <!-- Directores -->
-      <NuxtLink to="/cine/Directores" class="card-categoria">
+      <NuxtLink to="/cine/directores" class="card-categoria">
         <img
           class="card-categoria__imagen"
           src="/images/directores/mainpage.jpg"
@@ -32,7 +32,7 @@
       </NuxtLink>
 
       <!-- Productoras -->
-      <NuxtLink to="/cine/Productoras" class="card-categoria">
+      <NuxtLink to="/cine/productoras" class="card-categoria">
         <img
           class="card-categoria__imagen"
           src="/images/productoras/mainpage.jpg"

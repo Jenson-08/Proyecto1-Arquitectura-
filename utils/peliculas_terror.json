@@ -1,5 +1,5 @@
 {
-  "Directores": [
+  "directores": [
     {
       "Identificacion": "101234567",
       "Nombre": "James Wan",
@@ -37,7 +37,7 @@
       "Fecha_nacimiento": "1939-08-02"
     }
   ],
-  "Productoras": [
+  "productoras": [
     {
       "Identificacion": "3101123456",
       "Nombre": "Warner Bros.",
@@ -75,7 +75,7 @@
       "Annio_fundacion": 2005
     }
   ],
-  "Peliculas": [
+  "peliculas": [
     {
       "Titulo": "El_Conjuro",
       "Descripcion": "Pareja de investigadores paranormales ayuda a una familia aterrorizada.",

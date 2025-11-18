@@ -8,7 +8,10 @@
         <div class="card-director__imagen-wrapper">
           <img
             class="card-director__imagen"
-            :src="`/images/directores/${d.Identificacion.replace(/\s+/g, '_')}.jpg`"
+            :src="`/images/directores/${d.Identificacion.replace(
+              /\s+/g,
+              '_'
+            )}.jpg`"
             :alt="`Foto de ${d.Nombre}`"
           />
         </div>
@@ -18,11 +21,16 @@
           <span class="u-emphasis-cryptic">{{ d.Nombre }}</span>
           <p class="card-director__info">
             {{ d.Nacionalidad }}
-            <span class="u-desc-phantasm">(Nacido: {{ d.Fecha_nacimiento }})</span>
+            <span class="u-desc-phantasm"
+              >(Nacido: {{ d.Fecha_nacimiento }})</span
+            >
           </p>
 
           <NuxtLink
-            :to="{ path: '/cine/search/peliculas', query: { director: d.Identificacion } }"
+            :to="{
+              path: '/cine/search/peliculas',
+              query: { director: d.Identificacion },
+            }"
             class="btn-enlace"
           >
             🎬 Ver películas
@@ -35,7 +43,7 @@
 
 <script>
 export default {
-  name: "Directores",
+  name: "directores",
   props: {
     items: {
       type: Array,

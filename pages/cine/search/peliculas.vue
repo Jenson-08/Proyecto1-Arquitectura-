@@ -19,7 +19,7 @@ export default {
 
   async asyncData({ query }) {
     return {
-      marca: "Peliculas", // string: "Peliculas" | "Directores" | "Productoras"
+      marca: "peliculas", // string: "Peliculas" | "Directores" | "Productoras"
       data: collections || [], // array de registros
       // Si existe, lo parsea de JSON, si no queda null
       directorObj: query.director

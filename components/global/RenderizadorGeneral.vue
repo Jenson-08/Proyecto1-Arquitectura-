@@ -1,7 +1,7 @@
 <template>
   <div class="renderizador-caja">
     <!-- Renderiza Películas -->
-    <div v-if="marca === 'Peliculas'">
+    <div v-if="marca === 'peliculas'">
       <h2 class="renderizador-titulo">
         <template v-if="director">
           Películas del Director {{ director.Nombre }}
@@ -14,12 +14,12 @@
 
       <!-- 🔹 Botón Volver dinámico -->
       <div v-if="director || productora" class="volver-wrapper">
-        <NuxtLink v-if="director" to="/cine/Directores" class="btn-volver">
+        <NuxtLink v-if="director" to="/cine/directores" class="btn-volver">
           ← Volver a Directores
         </NuxtLink>
         <NuxtLink
           v-else-if="productora"
-          to="/cine/Productoras"
+          to="/cine/productoras"
           class="btn-volver"
         >
           ← Volver a Productoras
@@ -35,13 +35,13 @@
     </div>
 
     <!-- Renderiza Directores -->
-    <div v-else-if="marca === 'Directores'">
+    <div v-else-if="marca === 'directores'">
       <h2 class="renderizador-titulo"></h2>
       <Directores :items="data[marca]" />
     </div>
 
     <!-- Renderiza Productoras -->
-    <div v-else-if="marca === 'Productoras'">
+    <div v-else-if="marca === 'productoras'">
       <h2 class="renderizador-titulo">Listado de Productoras</h2>
       <Productoras :items="data[marca]" />
     </div>
@@ -79,13 +79,13 @@ export default {
     director() {
       const id = this.$route.query.director;
       return id
-        ? this.data.Directores.find((d) => d.Identificacion === id)
+        ? this.data.directores.find((d) => d.Identificacion === id)
         : null;
     },
     productora() {
       const id = this.$route.query.productora;
       return id
-        ? this.data.Productoras.find((p) => p.Identificacion === id)
+        ? this.data.productoras.find((p) => p.Identificacion === id)
         : null;
     },
   },

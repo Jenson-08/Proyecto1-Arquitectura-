@@ -8,7 +8,10 @@
         <div class="card-productora__imagen-wrapper">
           <img
             class="card-productora__imagen"
-            :src="`/images/productoras/${p.Identificacion.replace(/\s+/g, '_')}.jpg`"
+            :src="`/images/productoras/${p.Identificacion.replace(
+              /\s+/g,
+              '_'
+            )}.jpg`"
             :alt="`Logo de ${p.Nombre}`"
           />
         </div>
@@ -18,11 +21,16 @@
           <span class="u-emphasis-cryptic">{{ p.Nombre }}</span>
           <p class="card-productora__info">
             {{ p.Pais_origen }}
-            <span class="u-desc-phantasm">(Fundada: {{ p.Annio_fundacion }})</span>
+            <span class="u-desc-phantasm"
+              >(Fundada: {{ p.Annio_fundacion }})</span
+            >
           </p>
 
           <NuxtLink
-            :to="{ path: '/cine/search/peliculas', query: { productora: p.Identificacion } }"
+            :to="{
+              path: '/cine/search/peliculas',
+              query: { productora: p.Identificacion },
+            }"
             class="btn-enlace"
           >
             🎬 Ver películas
@@ -35,7 +43,7 @@
 
 <script>
 export default {
-  name: "Productoras",
+  name: "productoras",
   props: {
     items: {
       type: Array,

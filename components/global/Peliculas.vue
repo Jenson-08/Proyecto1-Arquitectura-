@@ -67,7 +67,7 @@
 
 <script>
 export default {
-  name: "Peliculas",
+  name: "peliculas",
   props: {
     items: { type: Object, required: true },
     directorId: { type: String, default: null },
@@ -75,7 +75,7 @@ export default {
   },
   computed: {
     peliculasFiltradas() {
-      let lista = this.items.Peliculas;
+      let lista = this.items.peliculas;
 
       if (this.directorId) {
         lista = lista.filter((p) => p.Director === this.directorId);
@@ -90,11 +90,11 @@ export default {
   },
   methods: {
     getDirectorNombre(id) {
-      const dir = this.items.Directores.find((d) => d.Identificacion === id);
+      const dir = this.items.directores.find((d) => d.Identificacion === id);
       return dir ? dir.Nombre : "Desconocido";
     },
     getProductoraNombre(id) {
-      const prod = this.items.Productoras.find((p) => p.Identificacion === id);
+      const prod = this.items.productoras.find((p) => p.Identificacion === id);
       return prod ? prod.Nombre : "Desconocida";
     },
     async onComprar(pelicula) {
