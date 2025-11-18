@@ -54,7 +54,7 @@
 
         <p class="tarjeta-pelicula__descripcion">{{ pelicula.Descripcion }}</p>
         <button class="boton-comprar" @click="onComprar(pelicula)">
-          🛒 Comprar {{ pelicula.Precio }}
+          🛒 Comprar ${{ pelicula.Precio }}
         </button>
       </div>
     </div>
